@@ -1,0 +1,32 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "main": "src/api.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon src/api.js --exec babel-node",
+    "serve": "node dist/api.js",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "GIT",
+    "url": "https://github.com/HenriqueSilverio/employee-api"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "cross-env": "^5.0.1",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0"
+  }
+}
